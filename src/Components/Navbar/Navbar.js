@@ -43,9 +43,9 @@ const Navbar = () =>  {
               <Anchor href="/SocialMedia">SocialMedia</Anchor>
             </ListItem>
 
-            <ListItem>
-              <Anchor href="#">Footer</Anchor>
-            </ListItem>
+            // <ListItem>
+            //   <Anchor href="#">Footer</Anchor>
+            // </ListItem>
 
             <ListItem><NavLink  style={{textDecoration:'none'}} exact to="/Contact">Contact</NavLink></ListItem> 
           </UlList>
