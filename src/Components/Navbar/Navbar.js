@@ -54,14 +54,6 @@ const Navbar = () =>  {
               </NavLinkStyled>
             </ListItem>
 
-<<<<<<< HEAD
-            <ListItem>
-              <NavLinkStyled style={{textDecoration:'none'}} exact to="/Contact">
-                Contact
-              </NavLinkStyled>
-            </ListItem> 
-=======
->>>>>>> 242da0a6bbfcadc5889a01daf274b8347bf2147c
 
           </UlList>
         </div>
