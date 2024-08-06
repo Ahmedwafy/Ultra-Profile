@@ -1,10 +1,11 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 // or 
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 //   بيعمل اكتف كلاس اوتوماتيك لما ادوس على اللينكNavLink الفرق بينهم ان 
-import {NavbarSection, Logo, LogoText, UlList, ListItem, Anchor} from "./NavbarStyle"
+import { NavbarSection, Logo, LogoText, UlList, ListItem, NavLinkStyled } from "./NavbarStyle"
 
+//  used NavLinkStyled instead of NavLink AFTER make styled component to add new featchers
 
 const Navbar = () =>  {
     return (
@@ -18,36 +19,47 @@ const Navbar = () =>  {
           <UlList>
 
             <ListItem>
-              <NavLink style={{textDecoration:'none'}} exact to="/">
+              <NavLinkStyled style={{textDecoration:'none'}} exact to="/">
                 <p>Home</p>
-              </NavLink>
+              </NavLinkStyled>
             </ListItem>
 
             <ListItem>
-              <Anchor href="/Work">Work</Anchor>
+              <NavLinkStyled style={{textDecoration:'none'}} exact to="/Work">
+              <p>Work</p>
+              </NavLinkStyled>
             </ListItem>
 
             <ListItem>
-              <Anchor href="/About">About</Anchor>
+              <NavLinkStyled style={{textDecoration:'none'}} exact to="/About">
+              <p>About</p>
+              </NavLinkStyled>
             </ListItem>
 
             <ListItem>
-              <Anchor href="/Profile">Profile</Anchor>
+              <NavLinkStyled style={{textDecoration:'none'}} exact to="/Profile">
+              <p>Profile</p>
+              </NavLinkStyled>
             </ListItem>
 
             <ListItem>
-              <Anchor href="/Portfolio">Portfolio</Anchor>
+              <NavLinkStyled style={{textDecoration:'none'}} exact to="/Portfolio">
+              <p>Portfolio</p>
+              </NavLinkStyled>
             </ListItem>
 
             <ListItem>
-              <Anchor href="/SocialMedia">SocialMedia</Anchor>
+              <NavLinkStyled style={{textDecoration:'none'}} exact to="/SocialMedia">
+              <p>SocialMedia</p>
+              </NavLinkStyled>
             </ListItem>
 
             <ListItem>
-              <Anchor href="#">Footer</Anchor>
-            </ListItem>
+              <NavLinkStyled style={{textDecoration:'none'}} exact to="/Contact">
+                Contact
+              </NavLinkStyled>
+            </ListItem> 
 
-            <ListItem><NavLink  style={{textDecoration:'none'}} exact to="/Contact">Contact</NavLink></ListItem> 
           </UlList>
         </div>
       </NavbarSection>

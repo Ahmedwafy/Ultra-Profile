@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const NavbarSection = styled.div`
     padding: 5px 0;
@@ -26,19 +27,25 @@ export const UlList = styled.ul`
 export const ListItem = styled.li`
     display: inline-block;
     text-decoration: none; 
-    font-weight: bold;
-`
-
-export const Anchor = styled.a`
-    display: block;
-    color: #222;
-    text-decoration: none;
-    padding: 10px 15px;
+    padding: 0px 10px;
     font-weight: bold;
 
     &:hover {
         cursor: pointer;
-        color: #eb5424
+    }
+`
+
+export const NavLinkStyled = styled(NavLink)`
+    text-decoration: none;
+    color: inherit;          // Make sure to inherit color from ListItem
+
+    &:hover {
+        color: #EB5424;      // Add hover color for NavLink
+    }
+
+    &.active {
+        font-weight: bold;   // Style for active link
+        color: #EB5424;      // Different color for active link
     }
 `
 
