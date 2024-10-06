@@ -1,8 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// or 
-// import { NavLink } from "react-router-dom";
-//   بيعمل اكتف كلاس اوتوماتيك لما ادوس على اللينكNavLink الفرق بينهم ان 
 import { NavbarSection, Logo, LogoText, UlList, ListItem, NavLinkStyled } from "./NavbarStyle"
 
 //  used NavLinkStyled instead of NavLink AFTER make styled component to add new featchers
@@ -53,7 +49,6 @@ const Navbar = () =>  {
               <p>SocialMedia</p>
               </NavLinkStyled>
             </ListItem>
-
 
           </UlList>
         </div>

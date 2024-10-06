@@ -3,18 +3,6 @@ import "./WorkStyle.js";
 import axios from "axios";
 import {WorkSection, WorkTitle, Span, WorkPart, Icon, PartTile, Line, PartDesc, } from "./WorkStyle.js"
 
-// 1-  axiosندهت على 
-// 2-  اللى جاىaxios بناءا على upadte فاضى وهعمل array وجواها state عملت 
-// 3-  json على الفايل بتاع request هعمل 
-// 4-  USING axios means > w8 Component to reload then >> Request Done
-// 5- how Component reload ? Using componentDidMount() {}
-// ComponentDidMount معناها ان بعد ما يحمل كل حاجة يعمل الفنكشن دى
-// 6- go to 'js/data.json' بجيب فايل
-// 7- .then(res => {console.log(res.data.works)}) .. Show me the Data in Console
-
-// 8-  بالداتا الى انا جبتها update to state عايز اعمل 
-// .then(res => {this.setState({works : res.data.works})})
-
 class Work extends Component {
 
   state = {
